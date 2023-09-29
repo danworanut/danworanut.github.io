@@ -4,14 +4,19 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #333;
+}
 .container {
-    max-width: 1140px;
+    /* max-width: 1140px; */
     margin: 0 auto;
+    padding: 1.3rem 10%;
  
 }
 
 nav {
-    background: #333;
+    background:rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(50px);
 
 }
 
@@ -23,8 +28,10 @@ nav {
     position: relative;
 }
 
-.nav-wrapper .logo h3 {
+.nav-wrapper .logo a {
     color: aliceblue;
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 .menu {
@@ -33,8 +40,9 @@ nav {
 }
 
 .menu li {
-
-    margin-left: 20px;
+    font-size: 1.15rem;
+    font-weight: 500;
+    margin-left: 3rem;
 }
 
 .menu li a {
@@ -47,9 +55,9 @@ nav {
 
 }
 
-main {
+/* main {
     padding: 2rem 0;
-}
+} */
 
 footer {
     background-color: #333;
@@ -89,15 +97,27 @@ footer {
     transform: translate(0, -11px) rotate(45deg);
   }
 
+@media screen and (min-width: 992px){
+    .container {
+      
+        padding: 1.3rem 5%;
+     
+    }
+}
 
-
-@media only screen and (min-width: 360px){
+@media screen and (min-width: 768px){
     .ham-menu {
         display: none;
     }
 }
 
-@media only screen and (max-width: 360px) {
+@media screen and (max-width: 768px) {
+
+    .container {
+        margin: 0 auto;
+        padding: 1.3rem 5%;
+     
+    }
 
     .menu {
         display: none;
@@ -105,14 +125,14 @@ footer {
     }
 
     .nav-wrapper{
-        padding: 1rem;
+        /* padding: 1rem; */
         height: auto;
         flex-direction: column;
         align-items: flex-start;
     }
 
     .menu li {
-        margin: 1rem 0;
+        margin: 1rem ;
         padding: 1rem 0.5rem;
         transition: 0.3s;
     }
@@ -123,7 +143,11 @@ footer {
 
     .menu-active {
         display: block;
-      }
+    }
+
+    .ham-menu {
+        top: 0rem;
+    }
 
 
 }
