@@ -33,6 +33,7 @@ nav {
 }
 
 .menu li {
+
     margin-left: 20px;
 }
 
@@ -41,8 +42,8 @@ nav {
     text-decoration: none;
 }
 
-.menu li:hover {
-    background-color: rgb(90, 168, 21);
+.menu li a:hover {
+    color: rgb(90, 168, 21);
 
 }
 
@@ -116,8 +117,8 @@ footer {
         transition: 0.3s;
     }
 
-    .menu li:hover {
-        background-color: rgb(90, 168, 21);
+    .menu li a:hover {
+        color: rgb(90, 168, 21);
     }
 
     .menu-active {
