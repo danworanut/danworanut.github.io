@@ -74,6 +74,37 @@ nav {
 
 }
 
+/* Hamberger menu css */
+
+.ham-menu {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: 0.5rem;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #fffdfd;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  /* Rotate first bar */
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {opacity: 0;}
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
 /* section home */
 
 .home {
@@ -133,6 +164,100 @@ span {
     box-shadow: none;
 }
 
+/* portfolio section design */
+
+.portfolio {
+    background-color: var(--second-bg-color);
+
+}
+
+.portfolio .heading {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+.portfolio .heading span{
+    margin-left: 1rem;
+}
+
+.portfolio h2{
+    margin-bottom: 4rem;
+}
+
+.portfolio-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.portfolio-container .portfolio-box{
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
+}
+
+.portfolio-box img{
+    width: 100%;
+    transition: .5s ease;
+
+}
+
+.portfolio-box:hover img{
+    transform: scale(1.1);
+}
+
+.portfolio-box .portfolio-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+
+}
+.portfolio-box:hover .portfolio-layer {
+    transform: translateY(0);
+
+}
+
+.portfolio-layer h4 {
+    font-size: 3rem;
+} 
+
+.portfolio-layer p {
+    font-size: 1.6rem;
+    margin: .3rem 0 1rem;
+}
+
+.portfolio-layer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 5rem;
+    height: 5rem; */
+    font-size: 3rem;
+    color: var(--text-color);
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+/* .portfolio-layer a i{
+  
+    font-size: 2rem;
+    color: var(--second-bg-color);
+} */
+
 /* main {
     padding: 2rem 0;
 } */
@@ -144,36 +269,6 @@ footer {
     padding: 2rem;
 }
 
-/* Hamberger menu css */
-
-.ham-menu {
-    display: inline-block;
-    cursor: pointer;
-    position: absolute;
-    right: 1rem;
-    top: 0.5rem;
-  }
-  
-  .bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #fffdfd;
-    margin: 6px 0;
-    transition: 0.4s;
-  }
-  
-  /* Rotate first bar */
-  .change .bar1 {
-    transform: translate(0, 11px) rotate(-45deg);
-  }
-  
-  /* Fade out the second bar */
-  .change .bar2 {opacity: 0;}
-  
-  /* Rotate last bar */
-  .change .bar3 {
-    transform: translate(0, -11px) rotate(45deg);
-  }
 
 @media screen and (min-width: 992px){
     .container {
