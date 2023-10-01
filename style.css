@@ -148,6 +148,11 @@ span {
 
 }
 
+.education h2 {
+    margin-bottom: 4rem;
+}
+
+
 .education .educatio-row {
     display: flex;
     flex-wrap: wrap;
@@ -233,6 +238,10 @@ span {
     min-height: auto;
     padding-bottom: 7rem;
     background: var(--second-bg-color);
+}
+
+.skills h2 {
+    margin-bottom: 4rem;
 }
 
 .skills .skills-row {
