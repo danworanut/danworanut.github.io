@@ -6,30 +6,31 @@
     <title>Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <!-- box icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
 
-    <nav>
-        <div class="container">
-            <div class="nav-wrapper">
-                <div class="logo">
-                    <a>Portfolio</a>
-                </div>
-                <ul class="menu" id="myMenu">
-                    <li><a href="#home" class="active">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skill">Skill</a></li>
-                    <li><a href="#portfolio">Project</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <div class="ham-menu" onclick="toggleHam(this)">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <!-- header design -->
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+
+            <span class="active-nav"></span>
+        </nav>
+    </header>
+
+
 
     <!-- home section design -->
     <section class="home" id="home">
@@ -63,7 +64,7 @@
                 <div class="education-box">
                     <div class="education-content">
                         <div class="content">
-                            <div class="year"><i></i> 2017 -2018</div>
+                            <div class="year"><i class="bx bx-calendar"></i> 2017 -2018</div>
                             <h3>PSU - university</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci sapiente voluptas nam tempore. Facere non ea autem aliquam ut nesciunt.</p>
                         </div>
@@ -71,7 +72,7 @@
 
                     <div class="education-content">
                         <div class="content">
-                            <div class="year"><i></i> 2017 -2018</div>
+                            <div class="year"><i class="bx bx-calendar"></i> 2017 -2018</div>
                             <h3>PSU - university</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci sapiente voluptas nam tempore. Facere non ea autem aliquam ut nesciunt.</p>
                         </div>
@@ -79,7 +80,7 @@
 
                     <div class="education-content">
                         <div class="content">
-                            <div class="year"><i></i> 2017 -2018</div>
+                            <div class="year"><i class="bx bx-calendar"></i> 2017 -2018</div>
                             <h3>PSU - university</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci sapiente voluptas nam tempore. Facere non ea autem aliquam ut nesciunt.</p>
                         </div>
@@ -87,7 +88,7 @@
 
                     <div class="education-content">
                         <div class="content">
-                            <div class="year"><i></i> 2017 -2018</div>
+                            <div class="year"><i class="bx bx-calendar"></i> 2017 -2018</div>
                             <h3>PSU - university</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci sapiente voluptas nam tempore. Facere non ea autem aliquam ut nesciunt.</p>
                         </div>
@@ -103,7 +104,7 @@
                 <div class="education-box">
                     <div class="education-content">
                         <div class="content">
-                            <div class="year"><i></i> 2017 -2018</div>
+                            <div class="year"><i class="bx bx-calendar"></i> 2017 -2018</div>
                             <h3>Project managment system</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci sapiente voluptas nam tempore. Facere non ea autem aliquam ut nesciunt.</p>
                         </div>
@@ -111,7 +112,7 @@
 
                     <div class="education-content">
                         <div class="content">
-                            <div class="year"><i></i> 2017 -2018</div>
+                            <div class="year"><i class="bx bx-calendar"></i> 2017 -2018</div>
                             <h3>PSU - university</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci sapiente voluptas nam tempore. Facere non ea autem aliquam ut nesciunt.</p>
                         </div>
@@ -119,7 +120,7 @@
 
                     <div class="education-content">
                         <div class="content">
-                            <div class="year"><i></i> 2017 -2018</div>
+                            <div class="year"><i class="bx bx-calendar"></i> 2017 -2018</div>
                             <h3>PSU - university</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci sapiente voluptas nam tempore. Facere non ea autem aliquam ut nesciunt.</p>
                         </div>
@@ -127,7 +128,7 @@
 
                     <div class="education-content">
                         <div class="content">
-                            <div class="year"><i></i> 2017 -2018</div>
+                            <div class="year"><i class="bx bx-calendar"></i> 2017 -2018</div>
                             <h3>PSU - university</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci sapiente voluptas nam tempore. Facere non ea autem aliquam ut nesciunt.</p>
                         </div>
@@ -286,7 +287,7 @@
         </div>
 
         <div class="footer-top">
-            <a href="#home"> <i class="">^</i></a>
+            <a href="#home"> <i class="bx bx-up-arrow-alt"></i></a>
         </div>
     </footer>
 
